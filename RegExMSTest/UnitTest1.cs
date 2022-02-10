@@ -44,7 +44,7 @@ namespace RegExMSTest
 
             Assert.AreEqual(expected, actual);
         }
-
+        
         [TestMethod]
         public void MobileNumber()
         {
