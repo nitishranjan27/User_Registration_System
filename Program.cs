@@ -26,6 +26,11 @@ namespace User_Registration_System
             Console.WriteLine("Please Enter your mobile no with country code");
             var check4 = mobile.ValidateMobileNo(Console.ReadLine());
             Console.WriteLine(check4);
+            //UC5
+            Password1_Min8Char password1 = new Password1_Min8Char();
+            Console.WriteLine("Please Enter your password to check");
+            var check5 = password1.ValidatePassword1(Console.ReadLine());
+            Console.WriteLine(check5);
         }
     }
 }
