@@ -21,4 +21,3 @@ namespace User_Registration_System
 			return Regex.IsMatch(lName, LAST_NAME_REGEX);
 		}
 	}
-}
