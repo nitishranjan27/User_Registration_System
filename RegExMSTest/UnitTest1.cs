@@ -3,71 +3,93 @@ using User_Registration_System;
 
 namespace RegExMSTest
 {
-    [TestClass]
+     [TestClass]
     public class UnitTest1
     {
+
         [TestMethod]
-        public void FirstName()
+        public void ValidFirstNameOfUser()
         {
-            string msg = " ";
-            string expected = "Valid";
+            //AAA method
+            //Arrange
+            string message = " ";
+            string expected = "invalid";
+            //creating object of moodanalyzer class and passing message
+            Patterns pattern = new Patterns(message);
 
-            Patterns p = new Patterns(msg);
+            //Act
+            string actual = pattern.ValidFirstName();
 
-            string actual = p.FirstName("Valid");
-
+            //Assert
+            //comparing actual and expected value
             Assert.AreEqual(expected, actual);
         }
-
         [TestMethod]
-        public void LastName()
+        public void ValidLastNameOfUser()
         {
-            string msg = " ";
-            string expected = "Valid";
+            //AAA method
+            //Arrange
+            string message = " ";
+            string expected = "invalid";
+            //creating object of moodanalyzer class and passing message
+            Patterns pattern = new Patterns(message);
 
-            Patterns p = new Patterns(msg);
+            //Act
+            string actual = pattern.ValidLastName();
 
-            string actual = p.LastName("Valid");
-
+            //Assert
+            //comparing actual and expected value
             Assert.AreEqual(expected, actual);
         }
-
         [TestMethod]
-        public void Email()
+        public void ValidEmailIdOfUser()
         {
-            string msg = " ";
-            string expected = "Invalid";
+            //AAA method
+            //Arrange
+            string message = " ";
+            string expected = "invalid";
+            //creating object of moodanalyzer class and passing message
+            Patterns pattern = new Patterns(message);
 
-            Patterns p = new Patterns(msg);
+            //Act
+            string actual = pattern.EmailIdValid();
 
-            string actual = p.Email("Invalid");
-
+            //Assert
+            //comparing actual and expected value
             Assert.AreEqual(expected, actual);
         }
-        
         [TestMethod]
-        public void MobileNumber()
+        public void ValidMobileNumOfUser()
         {
-            string msg = " ";
-            string expected = "Invalid";
+            //AAA method
+            //Arrange
+            string message = " ";
+            string expected = "invalid";
+            //creating object of moodanalyzer class and passing message
+            Patterns pattern = new Patterns(message);
 
-            Patterns p = new Patterns(msg);
+            //Act
+            string actual = pattern.MobileNumValid();
 
-            string actual = p.MobileNumber("Invalid");
-
+            //Assert
+            //comparing actual and expected value
             Assert.AreEqual(expected, actual);
         }
-
         [TestMethod]
-        public void Password()
+        public void ValidPasswordOfUser()
         {
-            string msg = " ";
-            string expected = "Invalid";
+            //AAA method
+            //Arrange
+            string message = " ";
+            string expected = "invalid";
+            //creating object of moodanalyzer class and passing message
+            Patterns pattern = new Patterns(message);
 
-            Patterns p = new Patterns(msg);
+            //Act
+            string actual = pattern.ValidPassword();
 
-            string actual = p.Password("Invalid");
-
+            //Assert
+            //comparing actual and expected value
             Assert.AreEqual(expected, actual);
         }
     }
