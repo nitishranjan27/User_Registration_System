@@ -31,6 +31,11 @@ namespace User_Registration_System
             Console.WriteLine("Please Enter your password to check");
             var check5 = password1.ValidatePassword1(Console.ReadLine());
             Console.WriteLine(check5);
+            //UC6
+            Password2_AtLeastOneUpperCase password2 = new Password2_AtLeastOneUpperCase();
+            Console.WriteLine("Please Enter your password to check");
+            var check6 = password2.ValidatePassword2(Console.ReadLine());
+            Console.WriteLine(check6);
         }
     }
 }
