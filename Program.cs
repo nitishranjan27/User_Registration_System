@@ -41,6 +41,11 @@ namespace User_Registration_System
             Console.WriteLine("Please Enter your password to check");
             var check7 = password3.ValidatePassword3(Console.ReadLine());
             Console.WriteLine(check7);
+            //UC8
+            Password4_ExactlyOneSpecialCharacter password4 = new Password4_ExactlyOneSpecialCharacter();
+            Console.WriteLine("Please Enter your password to check");
+            var check8 = password4.ValidatePassword4(Console.ReadLine());
+            Console.WriteLine(check8);
         }
     }
 }
