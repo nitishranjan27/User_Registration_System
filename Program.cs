@@ -21,6 +21,11 @@ namespace User_Registration_System
             Console.WriteLine("Please Enter your email to check");
             var check3 = email.ValidateEMail(Console.ReadLine());
             Console.WriteLine(check3);
+            //UC4
+            MobileFormate mobile = new MobileFormate();
+            Console.WriteLine("Please Enter your mobile no with country code");
+            var check4 = mobile.ValidateMobileNo(Console.ReadLine());
+            Console.WriteLine(check4);
         }
     }
 }
