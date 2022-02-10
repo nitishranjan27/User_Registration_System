@@ -19,8 +19,13 @@ namespace User_Registration_System
             Console.Write("\n Enter Last Name : ");
             string name2 = Console.ReadLine();
             p.LastName(name2);
-            
-            Console.WriteLine("\n Write your Mobile Number ex : +91 7488162561 .");
+
+            Console.WriteLine("\n Write your Email ex : example123@gmail.com your can write yahoo and any other mail ID.");
+            Console.Write("\n Enter Email : ");
+            string name3 = Console.ReadLine();
+            p.Email(name3);
+
+            Console.WriteLine("\n Write your Mobile Number ex : +91 7891235452 .");
             Console.Write("\n Enter Mobile Number : ");
             string name4 = Console.ReadLine();
             p.MobileNumber(name4);
@@ -29,16 +34,6 @@ namespace User_Registration_System
             Console.Write("\n Enter Password : ");
             string name5 = Console.ReadLine();
             p.Password(name5);
-
-            // UC 11 : Write MSUnit Parameterised Test to
-            // validate multiple entry for the Email Address.
-            while (true)
-            {
-                Console.WriteLine("\n Write your Email ex : example123@gmail.com your can write yahoo and any other mail ID.");
-                Console.Write("\n Enter Email : ");
-                string name3 = Console.ReadLine();
-                p.Email(name3);
-            }
         }
     }
 }
