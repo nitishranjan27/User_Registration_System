@@ -13,12 +13,13 @@ As a User need to enter a valid First Name
 namespace User_Registration_System
 {
 	public class FirstName
-	{
-		public static string FIRST_NAME_REGEX = "^[A-Z]{1}[a-z]{2,}$";
+    {
+        
+        public bool ValidateFirstName(string fName)
+        {
+            string FIRST_NAME_REGEX = "^[A-Z]{1}[a-z]{2,}$";
 
-		public bool ValidateFirstName(string fName)
-		{
-			return Regex.IsMatch(fName, FIRST_NAME_REGEX);
-		}
-	}
+            return Regex.IsMatch(fName, FIRST_NAME_REGEX);
+        }
+    }
 }
